@@ -1,7 +1,6 @@
 # Hockey's Club Website
 A modern, responsive hockey club website featuring programs, products, stats, and contact sections—designed with a clean, professional layout.
 Built for fans, players, and visitors to explore training programs, shop gear, and stay connected with the club.
-- **Responsive Navigation Menu** with call-to-action
 
 ## Features
 - Key club stats (e.g., Player Facility, Experienced Coach, etc.)
