@@ -5,7 +5,6 @@ A modern, responsive website for a professional hockey club.
 ## Features
 
 - **Responsive Navigation Menu** with call-to-action
-- **Hero Section** with slider and bold imagery
 - Key club stats (e.g., Player Facility, Experienced Coach, etc.)
 - Sections for different hockey programs: Junior, Teenager, Professional
 - **Featured Products** grid with price and status tags
