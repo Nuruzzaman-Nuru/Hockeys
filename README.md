@@ -30,8 +30,7 @@ A modern, responsive website for a professional hockey club.
 2. Make sure [Tailwind CSS](https://tailwindcss.com/docs/installation) is included (via CDN recommended for simple projects).
 3. Customize content in `index.html` as needed.
 4. Edit or add CSS in `style.css` for any extra custom styles (optional).
-5. Update images and assets in `/assets/images`.
-6. Modify/extend interactivity in `/js/main.js`.
+5. Update images and assets in /images`.
 
 
 
