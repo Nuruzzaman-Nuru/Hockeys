@@ -1,0 +1,1 @@
+Checked Tailwind breakpoints manually; all sections use grid flex with sm/lg classes. No code change needed.
