@@ -9,9 +9,7 @@ A modern, responsive website for a professional hockey club.
 - Key club stats (e.g., Player Facility, Experienced Coach, etc.)
 - Sections for different hockey programs: Junior, Teenager, Professional
 - **Featured Products** grid with price and status tags
-- Accordion for frequently asked client questions
-- **Contact Form** with additional contact info
-- Footer with links, details, and social icons
+- Accordion for frequently asked client question
 
 ## Technologies Used
 
