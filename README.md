@@ -1,6 +1,6 @@
 # Hockey's Club Website
 
-A modern, responsive website for a professional hockey club, built with **HTML**, **CSS**, **Tailwind CSS**, and **JavaScript**.
+A modern, responsive website for a professional hockey club.
 
 ## Features
 
