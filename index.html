@@ -3,9 +3,399 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hockeys</title>
+    <title>Hockey's Club</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Manrope', 'ui-sans-serif', 'system-ui']
+                    },
+                    colors: {
+                        brand: {
+                            DEFAULT: '#FF4240',
+                            dark: '#DB2D2C'
+                        }
+                    },
+                    boxShadow: {
+                        soft: '0 25px 50px -12px rgba(0, 0, 0, 0.08)'
+                    }
+                }
+            }
+        }
+    </script>
 </head>
-<body>
-    
+<body class="bg-white text-gray-900">
+    <div class="max-w-6xl px-4 mx-auto lg:px-6">
+        <!-- Header -->
+        <header class="py-6 lg:py-10">
+            <div class="flex flex-wrap items-center justify-between gap-4">
+                <div class="text-2xl font-extrabold lg:text-3xl">
+                    Hockey<span class="text-brand">'s</span>
+                </div>
+                <nav class="hidden gap-6 text-sm font-semibold text-gray-600 lg:flex">
+                    <a class="text-brand" href="#home">Home</a>
+                    <a href="#about" class="hover:text-brand">About</a>
+                    <a href="#programs" class="hover:text-brand">Programs</a>
+                    <a href="#products" class="hover:text-brand">Shop</a>
+                    <a href="#contact" class="hover:text-brand">Contact</a>
+                </nav>
+                <div class="flex items-center gap-4">
+                    <button aria-label="search" class="text-gray-500 transition hover:text-brand">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+                        </svg>
+                    </button>
+                    <button class="px-5 py-2 text-sm font-semibold text-white transition rounded-full bg-brand hover:bg-brand-dark">Get Ticket</button>
+                    <button class="text-gray-600 lg:hidden" aria-label="menu">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 5.25h16.5m-16.5 6h16.5m-16.5 6h16.5" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <!-- Hero -->
+        <section id="home" class="py-10 lg:py-14">
+            <div class="relative overflow-hidden rounded-3xl shadow-soft">
+                <img src="Images/1.png" alt="Hockey champions holding trophy" class="object-cover w-full h-[420px] sm:h-[520px] lg:h-[600px]">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent"></div>
+                <div class="absolute bottom-6 left-6 right-6 space-y-4 text-white lg:left-12 lg:right-auto max-w-xl">
+                    <div class="inline-flex items-center gap-2 px-4 py-2 text-xs font-semibold tracking-[0.35em] uppercase bg-white/10 rounded-full">
+                        <span class="w-2 h-2 rounded-full bg-brand animate-ping"></span>
+                        Hockey's Club
+                    </div>
+                    <h1 class="text-3xl font-extrabold leading-tight sm:text-4xl lg:text-5xl">
+                        Meet all the heroes from the field and feel the roar of winning moments
+                    </h1>
+                    <p class="text-sm text-white/80 sm:text-base">
+                        Our elite club unites legends and new talents with top-tier coaches, inspiring dedication every single season.
+                    </p>
+                    <div class="flex flex-wrap items-center gap-4">
+                        <button class="px-6 py-3 text-sm font-semibold text-black bg-white rounded-full shadow hover:bg-gray-100">
+                            Get Started
+                        </button>
+                        <button class="flex items-center gap-2 px-5 py-3 text-sm font-semibold text-white transition border rounded-full border-white/40 hover:bg-white/10">
+                            Watch Stories
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="m9 5 7 7-7 7"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="absolute flex items-center gap-4 bottom-6 right-6">
+                    <button class="p-3 rounded-full text-white border border-white/40 hover:bg-white/10">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5"/>
+                        </svg>
+                    </button>
+                    <button class="p-3 rounded-full text-gray-900 bg-white hover:bg-gray-100">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats -->
+        <section class="py-10 lg:py-16">
+            <div class="relative p-6 text-center bg-white border rounded-3xl border-gray-100 shadow-soft">
+                <h2 class="text-3xl font-extrabold">Professional Hockeys Club</h2>
+                <p class="max-w-2xl mx-auto mt-3 text-sm text-gray-500">
+                    Discover unmatched training, world-class facilities, and a supportive community geared for high performance.
+                </p>
+                <div class="grid gap-6 mt-10 sm:grid-cols-2 lg:grid-cols-4">
+                    <div class="space-y-2">
+                        <div class="inline-flex items-center justify-center w-32 h-32 mx-auto text-3xl font-bold rounded-full bg-red-50 text-brand border-4 border-red-100">87%</div>
+                        <p class="text-lg font-semibold">Power Facility</p>
+                        <p class="text-sm text-gray-500">High-tech gym and recovery labs.</p>
+                    </div>
+                    <div class="space-y-2">
+                        <div class="inline-flex items-center justify-center w-32 h-32 mx-auto text-3xl font-bold text-green-600 rounded-full bg-green-50 border-4 border-green-100">95%</div>
+                        <p class="text-lg font-semibold">Experienced Coach</p>
+                        <p class="text-sm text-gray-500">Pro-level mentors & staff.</p>
+                    </div>
+                    <div class="space-y-2">
+                        <div class="inline-flex items-center justify-center w-32 h-32 mx-auto text-3xl font-bold text-yellow-500 rounded-full bg-yellow-50 border-4 border-yellow-100">90%</div>
+                        <p class="text-lg font-semibold">Senior Player</p>
+                        <p class="text-sm text-gray-500">Seasoned players inspire youth.</p>
+                    </div>
+                    <div class="space-y-2">
+                        <div class="inline-flex items-center justify-center w-32 h-32 mx-auto text-3xl font-bold text-blue-500 rounded-full bg-blue-50 border-4 border-blue-100">80%</div>
+                        <p class="text-lg font-semibold">Training Ground</p>
+                        <p class="text-sm text-gray-500">Four pro-quality rinks.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Programs -->
+        <section id="programs" class="py-10 lg:py-16">
+            <div class="text-center">
+                <h2 class="text-3xl font-extrabold">Program Sections</h2>
+                <p class="max-w-2xl mx-auto mt-3 text-sm text-gray-500">
+                    Tailored programs for every age group ensure the right mix of training, discipline, and fun.
+                </p>
+            </div>
+            <div class="grid gap-6 mt-10 lg:grid-cols-3">
+                <article class="relative overflow-hidden rounded-3xl shadow-soft">
+                    <img src="Images/2.png" alt="Junior program training" class="object-cover w-full h-64">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent"></div>
+                    <div class="absolute bottom-0 w-full p-6 text-white">
+                        <p class="text-sm uppercase tracking-[0.25em] text-white/70">Junior Program</p>
+                        <h3 class="mt-2 text-2xl font-semibold">Ages 6-12</h3>
+                        <p class="mt-2 text-sm text-white/80">Soft skills, discipline, skating & mini league.</p>
+                        <button class="px-4 py-2 mt-4 font-semibold text-white rounded-full bg-brand hover:bg-brand-dark">Register Now</button>
+                    </div>
+                </article>
+                <article class="relative overflow-hidden rounded-3xl shadow-soft">
+                    <img src="Images/3.png" alt="Teenager program action" class="object-cover w-full h-64">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent"></div>
+                    <div class="absolute bottom-0 w-full p-6 text-white">
+                        <p class="text-sm uppercase tracking-[0.25em] text-white/70">Teenager Program</p>
+                        <h3 class="mt-2 text-2xl font-semibold">Ages 13-17</h3>
+                        <p class="mt-2 text-sm text-white/80">Strength building sessions and local tournaments.</p>
+                        <button class="px-4 py-2 mt-4 font-semibold text-white rounded-full bg-brand hover:bg-brand-dark">Register Now</button>
+                    </div>
+                </article>
+                <article class="relative overflow-hidden rounded-3xl shadow-soft">
+                    <img src="Images/4.png" alt="Professional program match" class="object-cover w-full h-64">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent"></div>
+                    <div class="absolute bottom-0 w-full p-6 text-white">
+                        <p class="text-sm uppercase tracking-[0.25em] text-white/70">Professional Program</p>
+                        <h3 class="mt-2 text-2xl font-semibold">Elite Squad</h3>
+                        <p class="mt-2 text-sm text-white/80">Advanced analytics, tactics, and exposure.</p>
+                        <button class="px-4 py-2 mt-4 font-semibold text-white rounded-full bg-brand hover:bg-brand-dark">Register Now</button>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Products -->
+        <section id="products" class="py-10 lg:py-16">
+            <div class="text-center">
+                <h2 class="text-3xl font-extrabold">Our New Products</h2>
+                <p class="max-w-2xl mx-auto mt-3 text-sm text-gray-500">
+                    Designed for performance on ice and durability off ice. Gear up for your next match.
+                </p>
+            </div>
+            <div class="grid gap-6 mt-10 sm:grid-cols-2 lg:grid-cols-3">
+                <!-- card template -->
+                <article class="flex gap-4 p-5 bg-white border rounded-3xl border-gray-100 shadow-soft">
+                    <img src="Images/5.png" alt="Product 1" class="object-cover w-28 h-28 rounded-2xl">
+                    <div class="space-y-2">
+                        <p class="text-xs font-semibold text-amber-500">★★★★★ <span class="text-gray-400">(5.0)</span></p>
+                        <h3 class="text-lg font-bold">World Cup Rage Jersey</h3>
+                        <p class="text-sm text-gray-500">Breathable mesh, pro fit silhouette.</p>
+                        <p class="text-base font-bold text-brand">Price: $49.00</p>
+                    </div>
+                </article>
+                <article class="flex gap-4 p-5 bg-white border rounded-3xl border-gray-100 shadow-soft">
+                    <img src="Images/6.png" alt="Product 2" class="object-cover w-28 h-28 rounded-2xl">
+                    <div class="space-y-2">
+                        <p class="text-xs font-semibold text-amber-500">★★★★☆ <span class="text-gray-400">(4.8)</span></p>
+                        <h3 class="text-lg font-bold">World Cup Fage Ball</h3>
+                        <p class="text-sm text-gray-500">Textured grip and stable rebounds.</p>
+                        <p class="text-base font-bold text-brand">Price: $22.00</p>
+                    </div>
+                </article>
+                <article class="flex gap-4 p-5 bg-white border rounded-3xl border-gray-100 shadow-soft">
+                    <img src="Images/7.png" alt="Product 3" class="object-cover w-28 h-28 rounded-2xl">
+                    <div class="space-y-2">
+                        <p class="text-xs font-semibold text-amber-500">★★★★☆ <span class="text-gray-400">(4.9)</span></p>
+                        <h3 class="text-lg font-bold">Guardian Helmet</h3>
+                        <p class="text-sm text-gray-500">Impact resistant shell, soft padding.</p>
+                        <p class="text-base font-bold text-brand">Price: $69.00</p>
+                    </div>
+                </article>
+                <article class="flex gap-4 p-5 bg-white border rounded-3xl border-gray-100 shadow-soft">
+                    <img src="Images/8.png" alt="Product 4" class="object-cover w-28 h-28 rounded-2xl">
+                    <div class="space-y-2">
+                        <p class="text-xs font-semibold text-amber-500">★★★★☆ <span class="text-gray-400">(4.6)</span></p>
+                        <h3 class="text-lg font-bold">Coach Whistle</h3>
+                        <p class="text-sm text-gray-500">Solid brass build with lanyard.</p>
+                        <p class="text-base font-bold text-brand">Price: $12.00</p>
+                    </div>
+                </article>
+                <article class="flex gap-4 p-5 bg-white border rounded-3xl border-gray-100 shadow-soft">
+                    <img src="Images/9.png" alt="Product 5" class="object-cover w-28 h-28 rounded-2xl">
+                    <div class="space-y-2">
+                        <p class="text-xs font-semibold text-amber-500">★★★★★ <span class="text-gray-400">(5.0)</span></p>
+                        <h3 class="text-lg font-bold">Pro Goalie Gloves</h3>
+                        <p class="text-sm text-gray-500">Reinforced padding & secure grip.</p>
+                        <p class="text-base font-bold text-brand">Price: $35.00</p>
+                    </div>
+                </article>
+                <article class="flex gap-4 p-5 bg-white border rounded-3xl border-gray-100 shadow-soft">
+                    <img src="Images/10.png" alt="Product 6" class="object-cover w-28 h-28 rounded-2xl">
+                    <div class="space-y-2">
+                        <p class="text-xs font-semibold text-amber-500">★★★★☆ <span class="text-gray-400">(4.7)</span></p>
+                        <h3 class="text-lg font-bold">Glacier Puck</h3>
+                        <p class="text-sm text-gray-500">Balanced weight for fast passes.</p>
+                        <p class="text-base font-bold text-brand">Price: $8.00</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <section class="py-10 lg:py-16">
+            <div class="grid gap-10 lg:grid-cols-2">
+                <div class="p-6 bg-white border rounded-3xl border-gray-100 shadow-soft">
+                    <img src="Images/11.png" alt="Client question illustration" class="object-cover w-full h-64 rounded-3xl">
+                </div>
+                <div class="space-y-4">
+                    <div>
+                        <h2 class="text-3xl font-extrabold">Clients Questions</h2>
+                        <p class="mt-2 text-sm text-gray-500">Answers for the most common queries from our community.</p>
+                    </div>
+                    <div class="divide-y divide-gray-200 rounded-3xl border border-gray-100 shadow-soft">
+                        <article class="p-5">
+                            <div class="flex items-center justify-between">
+                                <p class="text-lg font-semibold">Our equipment</p>
+                                <span class="text-xl text-gray-300">-</span>
+                            </div>
+                            <p class="mt-2 text-sm text-gray-500">All gear meets IIHF standards and is inspected weekly.</p>
+                        </article>
+                        <article class="p-5">
+                            <div class="flex items-center justify-between">
+                                <p class="text-lg font-semibold">Training schedule</p>
+                                <span class="text-xl text-gray-300">+</span>
+                            </div>
+                            <p class="mt-2 text-sm text-gray-500">Morning, afternoon and weekend slots for every squad.</p>
+                        </article>
+                        <article class="p-5">
+                            <div class="flex items-center justify-between">
+                                <p class="text-lg font-semibold">Private lessons</p>
+                                <span class="text-xl text-gray-300">+</span>
+                            </div>
+                            <p class="mt-2 text-sm text-gray-500">One-on-one coaching available on request.</p>
+                        </article>
+                        <article class="p-5">
+                            <div class="flex items-center justify-between">
+                                <p class="text-lg font-semibold">Booking & pricing</p>
+                                <span class="text-xl text-gray-300">+</span>
+                            </div>
+                            <p class="mt-2 text-sm text-gray-500">Flexible monthly, seasonal, and family plans.</p>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact" class="py-10 lg:py-16">
+            <div class="text-center">
+                <h2 class="text-3xl font-extrabold">Get In Touch</h2>
+                <p class="max-w-2xl mx-auto mt-2 text-sm text-gray-500">Reach us for facility tours, membership, or upcoming match tickets.</p>
+            </div>
+            <div class="grid gap-8 mt-10 lg:grid-cols-5">
+                <div class="col-span-2 space-y-4">
+                    <article class="p-6 bg-orange-50 rounded-3xl">
+                        <p class="text-sm text-gray-500">Phone Number</p>
+                        <p class="text-lg font-semibold text-gray-900">+1 (421) 123-214-583</p>
+                    </article>
+                    <article class="p-6 bg-blue-50 rounded-3xl">
+                        <p class="text-sm text-gray-500">Email Address</p>
+                        <p class="text-lg font-semibold text-gray-900">hockeys@support.com</p>
+                    </article>
+                    <article class="p-6 bg-emerald-50 rounded-3xl">
+                        <p class="text-sm text-gray-500">Location</p>
+                        <p class="text-lg font-semibold text-gray-900">152/1 Mohakhali Wireless Gate</p>
+                    </article>
+                </div>
+                <form class="col-span-3 grid gap-6 sm:grid-cols-2">
+                    <div>
+                        <label class="text-sm font-semibold text-gray-700">Your Name</label>
+                        <input type="text" placeholder="Enter your full name" class="w-full px-4 py-3 mt-2 text-sm border rounded-2xl border-gray-200 focus:border-brand focus:ring-brand">
+                    </div>
+                    <div>
+                        <label class="text-sm font-semibold text-gray-700">Your Email</label>
+                        <input type="email" placeholder="Enter your email" class="w-full px-4 py-3 mt-2 text-sm border rounded-2xl border-gray-200 focus:border-brand focus:ring-brand">
+                    </div>
+                    <div>
+                        <label class="text-sm font-semibold text-gray-700">Subject</label>
+                        <input type="text" placeholder="Enter your subject" class="w-full px-4 py-3 mt-2 text-sm border rounded-2xl border-gray-200 focus:border-brand focus:ring-brand">
+                    </div>
+                    <div>
+                        <label class="text-sm font-semibold text-gray-700">Phone Number</label>
+                        <input type="tel" placeholder="Enter your phone number" class="w-full px-4 py-3 mt-2 text-sm border rounded-2xl border-gray-200 focus:border-brand focus:ring-brand">
+                    </div>
+                    <div class="sm:col-span-2">
+                        <label class="text-sm font-semibold text-gray-700">Message</label>
+                        <textarea rows="6" placeholder="Write your message" class="w-full px-4 py-3 mt-2 text-sm border rounded-2xl border-gray-200 focus:border-brand focus:ring-brand"></textarea>
+                    </div>
+                    <div class="sm:col-span-2">
+                        <button type="submit" class="w-full px-6 py-3 font-semibold text-white rounded-full bg-brand hover:bg-brand-dark">Send Message</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <!-- Social Media -->
+        <section class="py-10 text-center">
+            <div class="p-6 text-gray-600 border rounded-3xl border-gray-100 shadow-soft">
+                <p class="text-sm font-semibold uppercase tracking-[0.3em]">Social Media</p>
+                <div class="flex items-center justify-center gap-6 mt-5 text-xl text-gray-800">
+                    <a href="#" class="transition hover:text-brand">Twitter</a>
+                    <a href="#" class="transition hover:text-brand">Instagram</a>
+                    <a href="#" class="transition hover:text-brand">YouTube</a>
+                    <a href="#" class="transition hover:text-brand">GitHub</a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="mt-12 text-gray-100 bg-gray-900">
+        <div class="max-w-6xl grid gap-10 px-6 py-12 mx-auto lg:grid-cols-4">
+            <div class="space-y-3">
+                <h3 class="text-2xl font-extrabold">Get In Touch</h3>
+                <p class="text-sm text-gray-300">Reach out to plan a facility tour, book ice time, or join the next season.</p>
+                <p class="text-sm text-gray-400">hockeys@support.com</p>
+                <p class="text-sm text-gray-400">+1 (421) 123-214-583</p>
+            </div>
+            <div>
+                <h4 class="text-lg font-semibold">Company</h4>
+                <ul class="mt-3 space-y-2 text-sm text-gray-400">
+                    <li><a href="#" class="hover:text-white">About us</a></li>
+                    <li><a href="#" class="hover:text-white">Leadership</a></li>
+                    <li><a href="#" class="hover:text-white">Careers</a></li>
+                    <li><a href="#" class="hover:text-white">News & Article</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-lg font-semibold">Support</h4>
+                <ul class="mt-3 space-y-2 text-sm text-gray-400">
+                    <li><a href="#" class="hover:text-white">Help Center</a></li>
+                    <li><a href="#" class="hover:text-white">Ticket Support</a></li>
+                    <li><a href="#" class="hover:text-white">Contact</a></li>
+                    <li><a href="#" class="hover:text-white">FAQ</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-lg font-semibold">Services</h4>
+                <ul class="mt-3 space-y-2 text-sm text-gray-400">
+                    <li><a href="#" class="hover:text-white">Academy</a></li>
+                    <li><a href="#" class="hover:text-white">Club Membership</a></li>
+                    <li><a href="#" class="hover:text-white">Equipment Store</a></li>
+                    <li><a href="#" class="hover:text-white">Private Sessions</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="px-6 py-3 text-sm text-center text-gray-500 border-t border-gray-800">
+            © <span id="year"></span> Hockey's Club. All rights reserved.
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
 </body>
 </html>
